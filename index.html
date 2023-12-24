@@ -74,7 +74,7 @@
         input:focus {
             border-color: #db5d5d;
         }
-        
+
     </style>
 </head>
 <body>
@@ -85,6 +85,7 @@
         <button id="buy">Купить</button>
     </div>
     <form id="form">
+        <h1>Оформление покупки</h1>
         <input type="text" placeholder="Имя" id="user_name">
         <input type="text" placeholder="Email" id="user_email">
         <input type="text" placeholder="Телефон" id="user_name">
@@ -95,6 +96,7 @@
         let tg = window.Telegram.WebApp;
         let buy = document.getElementById("buy");
         let order = document.getElementById("order");
+        tg.expand();
 
         buy.addEventListener("click",  ()  => {
             document.getElementById("main").style.display = "none";
